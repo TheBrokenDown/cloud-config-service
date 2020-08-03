@@ -1,0 +1,19 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    url: 'jdbc:mysql://localhost:3306/micro_product_service?serverTimezone=Europe/Moscow'
+    driver: com.mysql.cj.jdbc.Driver
+    username: delusive
+    password: 123123
+    initialization-mode: always
+  mvc:
+    converters:
+      preferred-json-mapper: gson
+  application:
+    name: product-service-v1
+
+eureka:
+  instance:
+    initial-status: STARTING
