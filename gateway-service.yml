@@ -1,6 +1,12 @@
 server:
-    port: 80
-  
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "refresh"
+
 spring:
   application:
     name: 'gateway-service'
