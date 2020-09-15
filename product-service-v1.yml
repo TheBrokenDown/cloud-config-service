@@ -16,7 +16,7 @@ spring:
 
 eureka:
   instance:
-    initial-status: OUT_OF_SERVICE
+    initial-status: STARTING
 
 management:
   endpoints:
